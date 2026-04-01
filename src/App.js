@@ -59,7 +59,7 @@ const App = () => {
       </h1>
 
       <p style={{ color: '#fff', fontSize: '1.5rem', zIndex: 10, marginTop: '20px' }}>
-        You really thought this was a real link?
+        Gotcha! 😂
       </p>
 
       {/* The Emoji Rain Logic */}

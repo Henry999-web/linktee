@@ -58,10 +58,24 @@ const App = () => {
         APRIL FOOL! 😂
       </h1>
 
-      <p style={{ color: '#fff', fontSize: '1.5rem', zIndex: 10, marginTop: '20px' }}>
+      <p style={{ 
+        color: '#fff', 
+        fontSize: 'clamp(1.2rem, 4vw, 1.5rem)', 
+        zIndex: 10, 
+        marginTop: '20px',
+        textAlign: 'center',
+        padding: '0 20px'
+      }}>
         Gotcha! 😂
       </p>
-      <p style={{ color: '#fff', fontSize: '1.5rem', zIndex: 10, marginTop: '20px' }}>
+      <p style={{ 
+        color: '#fff', 
+        fontSize: 'clamp(1rem, 3.5vw, 1.5rem)', 
+        zIndex: 10, 
+        marginTop: '10px',
+        textAlign: 'center',
+        padding: '0 20px'
+      }}>
         Please Follow Me on X (Formally Twitter) 👇
       </p>
       <a 
@@ -69,13 +83,13 @@ const App = () => {
         target="_blank" 
         rel="noopener noreferrer"
         style={{
-          marginTop: '30px',
-          padding: '15px 35px',
+          marginTop: 'clamp(20px, 4vw, 30px)',
+          padding: 'clamp(12px, 3vw, 15px) clamp(25px, 6vw, 35px)',
           backgroundColor: '#000',
           color: '#fff',
           border: '1px solid #333',
           borderRadius: '50px',
-          fontSize: '1.2rem',
+          fontSize: 'clamp(0.9rem, 3vw, 1.2rem)',
           fontWeight: 'bold',
           textDecoration: 'none',
           zIndex: 10,
@@ -84,7 +98,7 @@ const App = () => {
           cursor: 'pointer',
           display: 'flex',
           alignItems: 'center',
-          gap: '10px'
+          gap: 'clamp(6px, 2vw, 10px)'
         }}
         onMouseOver={(e) => {
           e.currentTarget.style.backgroundColor = '#1da1f2';
@@ -97,7 +111,7 @@ const App = () => {
           e.currentTarget.style.transform = 'scale(1)';
         }}
       >
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
           <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
         </svg>
         Follow me on X

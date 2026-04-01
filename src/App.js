@@ -61,6 +61,47 @@ const App = () => {
       <p style={{ color: '#fff', fontSize: '1.5rem', zIndex: 10, marginTop: '20px' }}>
         Gotcha! 😂
       </p>
+      <p style={{ color: '#fff', fontSize: '1.5rem', zIndex: 10, marginTop: '20px' }}>
+        Please Follow Me on X (Formally Twitter) 👇
+      </p>
+      <a 
+        href="https://x.com/henrydevx1" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        style={{
+          marginTop: '30px',
+          padding: '15px 35px',
+          backgroundColor: '#000',
+          color: '#fff',
+          border: '1px solid #333',
+          borderRadius: '50px',
+          fontSize: '1.2rem',
+          fontWeight: 'bold',
+          textDecoration: 'none',
+          zIndex: 10,
+          boxShadow: '0 10px 20px rgba(0,0,0,0.5)',
+          transition: 'all 0.2s ease-in-out',
+          cursor: 'pointer',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '10px'
+        }}
+        onMouseOver={(e) => {
+          e.currentTarget.style.backgroundColor = '#1da1f2';
+          e.currentTarget.style.borderColor = '#1da1f2';
+          e.currentTarget.style.transform = 'scale(1.05)';
+        }}
+        onMouseOut={(e) => {
+          e.currentTarget.style.backgroundColor = '#000';
+          e.currentTarget.style.borderColor = '#333';
+          e.currentTarget.style.transform = 'scale(1)';
+        }}
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+        </svg>
+        Follow me on X
+      </a>
 
       {/* The Emoji Rain Logic */}
       {emojis.map((_, index) => (
